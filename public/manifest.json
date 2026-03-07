@@ -1,0 +1,46 @@
+{
+  "bundles": [
+    {
+      "name": "default",
+      "assets": [
+        {
+          "alias": [
+            "images/Warrior_Idle.png",
+            "Warrior_Idle.png"
+          ],
+          "src": [
+            "images/Warrior_Idle@0.5x.png",
+            "images/Warrior_Idle.png"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "images/Archer_Idle.png",
+            "Archer_Idle.png"
+          ],
+          "src": [
+            "images/Archer_Idle@0.5x.png",
+            "images/Archer_Idle.png"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "react.svg"
+          ],
+          "src": [
+            "react.svg"
+          ],
+          "data": {
+            "tags": {}
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    --bg: rgba(197, 187, 164);
+    --main: rgba(149, 138, 122);
+    --primary: #403d39;
+    --secondary: #252422;
+    --odd: #eb5e28;
+  }
+
+  svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@font-face {
+  font-family: 'monogram';
+  src:
+    local('monogram-extended'),
+    url(./assets/fonts/monogram-extended.ttf) format('truetype');
+}
+
+* {
+  font-family: 'monogram', monospace;
+}
+
+body {
+  margin: 0;
+  scrollbar-gutter: stable both-edges;
+}
+
+img {
+  height: 100%;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+@layer base {
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: transparent;
+    opacity: 0;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-track-piece {
+    cursor: pointer;
+    background: red;
+    border-radius: 4px;
+    background-clip: padding-box;
+  }
+
+  ::-webkit-scrollbar-track-piece:hover {
+    background: red;
+    border-radius: 4px;
+    background-clip: padding-box;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: green;
+    border-radius: 4px;
+    background-clip: padding-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: green;
+    background-clip: padding-box;
+  }
+}
