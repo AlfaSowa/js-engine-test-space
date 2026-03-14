@@ -5,6 +5,45 @@
       "assets": [
         {
           "alias": [
+            "images/Archer_Idle.png",
+            "Archer_Idle.png"
+          ],
+          "src": [
+            "images/Archer_Idle@0.5x.png",
+            "images/Archer_Idle.png"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "images/Archer_Run.png",
+            "Archer_Run.png"
+          ],
+          "src": [
+            "images/Archer_Run@0.5x.png",
+            "images/Archer_Run.png"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "images/Castle.png",
+            "Castle.png"
+          ],
+          "src": [
+            "images/Castle@0.5x.png",
+            "images/Castle.png"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
             "images/Warrior_Idle.png",
             "Warrior_Idle.png"
           ],
@@ -18,12 +57,12 @@
         },
         {
           "alias": [
-            "images/Archer_Idle.png",
-            "Archer_Idle.png"
+            "images/Warrior_Run.png",
+            "Warrior_Run.png"
           ],
           "src": [
-            "images/Archer_Idle@0.5x.png",
-            "images/Archer_Idle.png"
+            "images/Warrior_Run@0.5x.png",
+            "images/Warrior_Run.png"
           ],
           "data": {
             "tags": {}

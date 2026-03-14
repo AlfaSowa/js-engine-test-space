@@ -6,8 +6,8 @@
             "inheritedMetaData": {},
             "transformData": {},
             "stats": {
-                "date": 1772866220044,
-                "duration": 2.408900000154972,
+                "date": 1772880203363,
+                "duration": 1.3377000000327826,
                 "success": true
             }
         },
@@ -18,10 +18,175 @@
             "inheritedMetaData": {},
             "transformData": {},
             "stats": {
-                "date": 1772866220044,
-                "duration": 2.0915000000968575,
+                "date": 1772880203363,
+                "duration": 0.983500000089407,
                 "success": true
             }
+        },
+        "E:/js-game-pack/test-space/src/assets/images/Archer_Idle.png": {
+            "isFolder": false,
+            "parent": "E:/js-game-pack/test-space/src/assets/images",
+            "metaData": {},
+            "inheritedMetaData": {},
+            "transformData": {},
+            "stats": {
+                "date": 1772866220044,
+                "duration": 52.374099999666214,
+                "success": true
+            },
+            "hash": "rWQ4Aw"
+        },
+        ".assetpack/mipmap/images/Archer_Idle.png": {
+            "isFolder": false,
+            "transformParent": "E:/js-game-pack/test-space/src/assets/images/Archer_Idle.png",
+            "metaData": {},
+            "inheritedMetaData": {},
+            "transformData": {}
+        },
+        ".assetpack/compress/images/Archer_Idle.png": {
+            "isFolder": false,
+            "transformParent": ".assetpack/mipmap/images/Archer_Idle.png",
+            "metaData": {},
+            "inheritedMetaData": {},
+            "transformData": {}
+        },
+        "E:/js-game-pack/test-space/public/images/Archer_Idle.png": {
+            "isFolder": false,
+            "transformParent": ".assetpack/compress/images/Archer_Idle.png",
+            "metaData": {},
+            "inheritedMetaData": {},
+            "transformData": {}
+        },
+        ".assetpack/mipmap/images/Archer_Idle@0.5x.png": {
+            "isFolder": false,
+            "transformParent": "E:/js-game-pack/test-space/src/assets/images/Archer_Idle.png",
+            "metaData": {},
+            "inheritedMetaData": {},
+            "transformData": {}
+        },
+        ".assetpack/compress/images/Archer_Idle@0.5x.png": {
+            "isFolder": false,
+            "transformParent": ".assetpack/mipmap/images/Archer_Idle@0.5x.png",
+            "metaData": {},
+            "inheritedMetaData": {},
+            "transformData": {}
+        },
+        "E:/js-game-pack/test-space/public/images/Archer_Idle@0.5x.png": {
+            "isFolder": false,
+            "transformParent": ".assetpack/compress/images/Archer_Idle@0.5x.png",
+            "metaData": {},
+            "inheritedMetaData": {},
+            "transformData": {}
+        },
+        "E:/js-game-pack/test-space/src/assets/images/Archer_Run.png": {
+            "isFolder": false,
+            "parent": "E:/js-game-pack/test-space/src/assets/images",
+            "metaData": {},
+            "inheritedMetaData": {},
+            "transformData": {},
+            "stats": {
+                "date": 1772878552091,
+                "duration": 57.3503999998793,
+                "success": true
+            },
+            "hash": "XtxDHA"
+        },
+        ".assetpack/mipmap/images/Archer_Run.png": {
+            "isFolder": false,
+            "transformParent": "E:/js-game-pack/test-space/src/assets/images/Archer_Run.png",
+            "metaData": {},
+            "inheritedMetaData": {},
+            "transformData": {}
+        },
+        ".assetpack/compress/images/Archer_Run.png": {
+            "isFolder": false,
+            "transformParent": ".assetpack/mipmap/images/Archer_Run.png",
+            "metaData": {},
+            "inheritedMetaData": {},
+            "transformData": {}
+        },
+        "E:/js-game-pack/test-space/public/images/Archer_Run.png": {
+            "isFolder": false,
+            "transformParent": ".assetpack/compress/images/Archer_Run.png",
+            "metaData": {},
+            "inheritedMetaData": {},
+            "transformData": {}
+        },
+        ".assetpack/mipmap/images/Archer_Run@0.5x.png": {
+            "isFolder": false,
+            "transformParent": "E:/js-game-pack/test-space/src/assets/images/Archer_Run.png",
+            "metaData": {},
+            "inheritedMetaData": {},
+            "transformData": {}
+        },
+        ".assetpack/compress/images/Archer_Run@0.5x.png": {
+            "isFolder": false,
+            "transformParent": ".assetpack/mipmap/images/Archer_Run@0.5x.png",
+            "metaData": {},
+            "inheritedMetaData": {},
+            "transformData": {}
+        },
+        "E:/js-game-pack/test-space/public/images/Archer_Run@0.5x.png": {
+            "isFolder": false,
+            "transformParent": ".assetpack/compress/images/Archer_Run@0.5x.png",
+            "metaData": {},
+            "inheritedMetaData": {},
+            "transformData": {}
+        },
+        "E:/js-game-pack/test-space/src/assets/images/Castle.png": {
+            "isFolder": false,
+            "parent": "E:/js-game-pack/test-space/src/assets/images",
+            "metaData": {},
+            "inheritedMetaData": {},
+            "transformData": {},
+            "stats": {
+                "date": 1772880203364,
+                "duration": 60.747700000181794,
+                "success": true
+            },
+            "hash": "S4iDmA"
+        },
+        ".assetpack/mipmap/images/Castle.png": {
+            "isFolder": false,
+            "transformParent": "E:/js-game-pack/test-space/src/assets/images/Castle.png",
+            "metaData": {},
+            "inheritedMetaData": {},
+            "transformData": {}
+        },
+        ".assetpack/compress/images/Castle.png": {
+            "isFolder": false,
+            "transformParent": ".assetpack/mipmap/images/Castle.png",
+            "metaData": {},
+            "inheritedMetaData": {},
+            "transformData": {}
+        },
+        "E:/js-game-pack/test-space/public/images/Castle.png": {
+            "isFolder": false,
+            "transformParent": ".assetpack/compress/images/Castle.png",
+            "metaData": {},
+            "inheritedMetaData": {},
+            "transformData": {}
+        },
+        ".assetpack/mipmap/images/Castle@0.5x.png": {
+            "isFolder": false,
+            "transformParent": "E:/js-game-pack/test-space/src/assets/images/Castle.png",
+            "metaData": {},
+            "inheritedMetaData": {},
+            "transformData": {}
+        },
+        ".assetpack/compress/images/Castle@0.5x.png": {
+            "isFolder": false,
+            "transformParent": ".assetpack/mipmap/images/Castle@0.5x.png",
+            "metaData": {},
+            "inheritedMetaData": {},
+            "transformData": {}
+        },
+        "E:/js-game-pack/test-space/public/images/Castle@0.5x.png": {
+            "isFolder": false,
+            "transformParent": ".assetpack/compress/images/Castle@0.5x.png",
+            "metaData": {},
+            "inheritedMetaData": {},
+            "transformData": {}
         },
         "E:/js-game-pack/test-space/src/assets/images/Warrior_Idle.png": {
             "isFolder": false,
@@ -78,57 +243,57 @@
             "inheritedMetaData": {},
             "transformData": {}
         },
-        "E:/js-game-pack/test-space/src/assets/images/Archer_Idle.png": {
+        "E:/js-game-pack/test-space/src/assets/images/Warrior_Run.png": {
             "isFolder": false,
             "parent": "E:/js-game-pack/test-space/src/assets/images",
             "metaData": {},
             "inheritedMetaData": {},
             "transformData": {},
             "stats": {
-                "date": 1772866220044,
-                "duration": 52.374099999666214,
+                "date": 1772878560920,
+                "duration": 60.7347999997437,
                 "success": true
             },
-            "hash": "rWQ4Aw"
+            "hash": "rCUNDg"
         },
-        ".assetpack/mipmap/images/Archer_Idle.png": {
+        ".assetpack/mipmap/images/Warrior_Run.png": {
             "isFolder": false,
-            "transformParent": "E:/js-game-pack/test-space/src/assets/images/Archer_Idle.png",
+            "transformParent": "E:/js-game-pack/test-space/src/assets/images/Warrior_Run.png",
             "metaData": {},
             "inheritedMetaData": {},
             "transformData": {}
         },
-        ".assetpack/compress/images/Archer_Idle.png": {
+        ".assetpack/compress/images/Warrior_Run.png": {
             "isFolder": false,
-            "transformParent": ".assetpack/mipmap/images/Archer_Idle.png",
+            "transformParent": ".assetpack/mipmap/images/Warrior_Run.png",
             "metaData": {},
             "inheritedMetaData": {},
             "transformData": {}
         },
-        "E:/js-game-pack/test-space/public/images/Archer_Idle.png": {
+        "E:/js-game-pack/test-space/public/images/Warrior_Run.png": {
             "isFolder": false,
-            "transformParent": ".assetpack/compress/images/Archer_Idle.png",
+            "transformParent": ".assetpack/compress/images/Warrior_Run.png",
             "metaData": {},
             "inheritedMetaData": {},
             "transformData": {}
         },
-        ".assetpack/mipmap/images/Archer_Idle@0.5x.png": {
+        ".assetpack/mipmap/images/Warrior_Run@0.5x.png": {
             "isFolder": false,
-            "transformParent": "E:/js-game-pack/test-space/src/assets/images/Archer_Idle.png",
+            "transformParent": "E:/js-game-pack/test-space/src/assets/images/Warrior_Run.png",
             "metaData": {},
             "inheritedMetaData": {},
             "transformData": {}
         },
-        ".assetpack/compress/images/Archer_Idle@0.5x.png": {
+        ".assetpack/compress/images/Warrior_Run@0.5x.png": {
             "isFolder": false,
-            "transformParent": ".assetpack/mipmap/images/Archer_Idle@0.5x.png",
+            "transformParent": ".assetpack/mipmap/images/Warrior_Run@0.5x.png",
             "metaData": {},
             "inheritedMetaData": {},
             "transformData": {}
         },
-        "E:/js-game-pack/test-space/public/images/Archer_Idle@0.5x.png": {
+        "E:/js-game-pack/test-space/public/images/Warrior_Run@0.5x.png": {
             "isFolder": false,
-            "transformParent": ".assetpack/compress/images/Archer_Idle@0.5x.png",
+            "transformParent": ".assetpack/compress/images/Warrior_Run@0.5x.png",
             "metaData": {},
             "inheritedMetaData": {},
             "transformData": {}

@@ -14,10 +14,12 @@ export class FollowedSystem implements System {
       const velocity = world.getComponent(entity, VelocityComponent)!
       const followed = world.getComponent(entity, FollowedComponent)!
 
-      if (entity.x !== followed.target.x || entity.y !== followed.target.y) {
+      const globalFollowedBounds = followed.target.getBounds()
+
+      if (entity.x !== globalFollowedBounds.x || entity.y !== globalFollowedBounds.y) {
         const delta = {
-          x: followed.target.x + followed.target.width / 2 - entity.x - entity.width / 2,
-          y: followed.target.y + followed.target.height / 2 - entity.y - entity.height / 2
+          x: globalFollowedBounds.x + globalFollowedBounds.width / 2 - entity.x - entity.width / 2,
+          y: globalFollowedBounds.y + globalFollowedBounds.height / 2 - entity.y - entity.height / 2
         }
 
         const angle = Math.atan2(delta.y, delta.x)

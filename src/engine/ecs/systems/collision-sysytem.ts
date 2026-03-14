@@ -3,6 +3,7 @@ import { World } from '../../core'
 import { EngineContext } from '../../engine-ctx'
 import { SpatialHashGrid } from '../../utils'
 import { ColliderComponent } from '../components'
+import { Entity } from '../entities'
 import { System } from './system'
 import { SYSTEM_PRIORITY } from './types'
 
@@ -31,8 +32,16 @@ export class CollisionSystem implements System {
         const c1 = world.getComponent(entity, ColliderComponent)!
         const c2 = world.getComponent(collideredEntity, ColliderComponent)!
 
-        if (this.testForAABB(entity.position, collideredEntity.position, c1, c2)) {
-          this.resolve(entity.position, collideredEntity.position, c1, c2)
+        if (c1.colliderType === 'rect' && c2.colliderType === 'rect') {
+          if (this.testForAABB(entity, collideredEntity)) {
+            this.resolve(entity.position, collideredEntity.position, c1, c2)
+          }
+        }
+
+        if (c1.colliderType === 'circle' && c2.colliderType === 'circle') {
+          if (this.circleCollision(entity, collideredEntity)) {
+            this.resolve(entity.position, collideredEntity.position, c1, c2)
+          }
         }
       }
     }
@@ -62,7 +71,23 @@ export class CollisionSystem implements System {
     }
   }
 
-  testForAABB = (p1: ObservablePoint, p2: ObservablePoint, c1: ColliderComponent, c2: ColliderComponent) => {
-    return p1.x < p2.x + c2.width && p1.x + c1.width > p2.x && p1.y < p2.y + c2.height && p1.y + c1.height > p2.y
+  testForAABB = (e1: Entity, e2: Entity) => {
+    const b1 = e1.getBounds()
+    const b2 = e2.getBounds()
+
+    return b1.x < b2.x + b2.width && b1.x + b1.width > b2.x && b1.y < b2.y + b2.height && b1.y + b1.height > b2.y
+  }
+
+  circleCollision(e1: Entity, e2: Entity) {
+    const b1 = e1.getBounds()
+    const b2 = e2.getBounds()
+
+    const dx = b1.x - b2.x
+    const dy = b1.y - b2.y
+
+    const distanceSq = dx * dx + dy * dy
+    const radiusSum = b1.width + b2.width
+
+    return distanceSq < radiusSum * radiusSum
   }
 }

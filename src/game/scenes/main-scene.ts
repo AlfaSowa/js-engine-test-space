@@ -1,18 +1,33 @@
-import { Engine, Scene } from '../../engine/core'
+import { Scene } from '../../engine/core'
+import { UiBox } from '../../engine/ui'
+import { GAME_PHASE, GamePhaseComponent } from '../ecs'
 import { TowerDefenceManager } from '../managers'
+import { UiInterfaces } from '../ui'
 
 export class MainScene extends Scene {
-  init(engine: Engine, isViewport?: boolean): void {
-    super.init(engine, isViewport)
-
-    TowerDefenceManager.init(this.engine, this.view)
-  }
+  uiBox: UiBox | null = null
 
   onLoad() {
-    TowerDefenceManager.run(this.engine)
+    this.uiBox = UiInterfaces.weaponsGrid(this.engine)
+    TowerDefenceManager.init(this.engine, this.view)
+    this.engine.uiManager.load(this.uiBox)
   }
 
   onUnLoad() {
-    TowerDefenceManager.stop(this.engine)
+    TowerDefenceManager.stop()
+    if (this.uiBox) {
+      this.engine.uiManager.removeFromStage(this.uiBox)
+      this.uiBox = null
+    }
+  }
+
+  update(dt: number): void {
+    const gamePhaseEntity = this.engine.world.getOrCreateSingleton(GamePhaseComponent, new GamePhaseComponent())
+    const gamePhase = this.engine.world.getComponent(gamePhaseEntity, GamePhaseComponent)
+
+    if (this.uiBox && gamePhase && gamePhase.phase === GAME_PHASE.PROGRESS) {
+      this.engine.uiManager.removeFromStage(this.uiBox)
+      this.uiBox = null
+    }
   }
 }

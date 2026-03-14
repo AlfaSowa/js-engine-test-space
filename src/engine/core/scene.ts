@@ -11,7 +11,10 @@ export class Scene {
   engine!: Engine
   id: string
 
-  view: Container = new Container()
+  view: Container = new Container({
+    isRenderGroup: true
+  })
+
   viewport?: Viewport
   activeContainer: Container = new Container()
 
@@ -52,10 +55,9 @@ export class Scene {
 
       this.view.addChild(this.viewport)
     } else {
-      this.activeContainer.addChild(
-        new Graphics().rect(0, 0, engine.app.canvas.width, engine.app.canvas.height).fill({ color: '#a85556' })
+      this.view.addChild(
+        new Graphics().rect(0, 0, engine.app.canvas.width, engine.app.canvas.height).fill({ color: '#a8ae51' })
       )
-      this.view.addChild(this.activeContainer)
     }
   }
 

@@ -24,7 +24,7 @@ export class Game implements IGame {
 
       //----- SCENES -----
       this.engine.sceneManager.add(MainMenuScene, false)
-      this.engine.sceneManager.add(MainScene)
+      this.engine.sceneManager.add(MainScene, false)
 
       this.engine.sceneManager.loadScene(MainMenuScene)
 
